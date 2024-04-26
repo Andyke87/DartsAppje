@@ -1,0 +1,17 @@
+.logo{
+    margin-top: 20px;
+}
+.startBtn{
+    background-color: red;
+    font-size: 30px;
+    color: white !important;
+    margin-top: 20px;
+    width: 250px;
+    height: 50px;
+    box-shadow: darkred 0px 0px 20px 0px;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    text-align: center;
+}
+

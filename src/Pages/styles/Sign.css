@@ -1,0 +1,57 @@
+input{
+    color: black !important;
+}
+.custom-button {
+    background-color: red;
+    font-size: xx-large;
+    color: white !important;
+    padding: 2px;
+    margin-top: 20px;
+    margin-left: 220px;
+    width: 15vh;
+    height: 7vh;
+    box-shadow: darkred 0px 0px 20px 0px;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.custom-button-register {
+    background-color: red;
+    font-size: x-large;
+    color: white !important;
+    padding: 2px;
+    margin-top: 10px;
+    width: 15vh;
+    height: 7vh;
+    box-shadow: darkred 0px 0px 20px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.link-to {
+    font-size: 20px;
+    margin-left: 140px;
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+.link-to-register {
+    font-size: 20px;
+    padding-right: 10px;
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+label {
+    font-size: larger; 
+}
+.toggle-button{
+    font-weight: bold;
+    margin-left: 8px;
+}
+.welkom{
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+startBtn{
+    margin-bottom: 20px;
+}

@@ -1,0 +1,76 @@
+.dartsGame {
+  background-color: #333;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+/* trow-darts div*/
+.spel {
+  padding-left: 60px;
+}
+/* score velden dartspijlen */
+.thrown-darts {
+  font-size: 80px;
+  font-weight: bolder;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.thrown-darts label {
+  color: rgb(255, 0, 0);
+  
+  font-size: 30px;
+}
+.dart-throw {
+  border: black solid 5px;
+  color: yellow;
+  width: 160px;
+  height: 160px;
+  text-align: center;
+  line-height: 150px;
+}
+
+.darts-players {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 100px;
+  gap: 50px;
+}
+.bord{
+  margin-top: 20px;
+  padding-left: 100px;
+  padding-bottom: 41px;
+}
+/* scorebord speler(s) */
+.score {
+  color: yellow;
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: start;
+  display: table-column;
+  align-items: column;
+  margin-right: 30px;
+}
+.scoreP {
+  margin-bottom: 5px;
+}
+/*score.jsx*/
+.player-info {
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+}
+.dart-pijl {
+  width: 100px;
+  height: 100px;
+  margin-left: 20px; 
+}
+
+
+
+
+
+

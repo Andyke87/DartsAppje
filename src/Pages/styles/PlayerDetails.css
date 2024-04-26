@@ -1,0 +1,33 @@
+.game-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 6px red;
+  margin-bottom: 1rem;
+  border: 2px solid red;
+  color: black !important;
+}
+
+.titleDetail {
+  font-size: 40px;
+  text-decoration: underline;
+  color: red;
+  margin-bottom: 40px;
+}
+.game-card p {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

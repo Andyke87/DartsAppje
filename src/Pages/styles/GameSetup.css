@@ -1,0 +1,29 @@
+.setup-label {
+  font-size: 26px;
+  color: #ff0000;
+  font-weight: bold;
+  width: 500px;
+}
+.setup-select {
+  font-size: 20px;
+  margin: 0px 20px;
+  border-radius: 5px;
+  color: black !important;
+}
+.setup-button {
+  font-size: 30px;
+  border: 2px solid #ff0000;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  margin: 20px;
+}
+.setup-all {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.setup-row {
+  margin-bottom: 20px;
+}
