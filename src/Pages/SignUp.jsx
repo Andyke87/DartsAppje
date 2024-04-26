@@ -4,7 +4,6 @@ import * as Yup from 'yup';
 import { useFormik } from 'formik';
 import { addPlayer } from '../API/api';
 import "../Pages/styles/Sign.css";
-import "../app.css";
 
 const validationSchema = Yup.object().shape({
   name: Yup.string().required('Verplicht'),
