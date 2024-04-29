@@ -63,29 +63,39 @@ const GameSetup = () => {
   console.log('player1Id', player1Id);
   console.log('player2Id', player2Id);
   const handleStartGame = () => {
-    // Controleer of er twee verschillende spelers zijn geselecteerd
-    if (selectedPlayers === 'two' && player1 === 'select') {
-      alert('Selecteer speler 1.');
-      return;
-    }
-    if (selectedPlayers === 'two' && player2 === 'select') {
-      alert('Selecteer speler 2.');
-      return;
-    }
-    if (selectedPlayers === 'two' && player1 === 'guest' && player2 === 'guest') {
-      navigate(`/board?players=${selectedPlayers}&game=${selectedGame}&legs=${selectedLegs}&player1=${player1}1&player2=${player2}2`);
-      return;
-    }
-    if (selectedPlayers === 'two' && player1 === player2) {
-      alert('Kies twee verschillende spelers om het spel te starten.');
-      return;
-    }
-    if (selectedPlayers === 'two') {
-      navigate(`/board?players=${selectedPlayers}&game=${selectedGame}&legs=${selectedLegs}&id1=${player1Id}&player1=${player1}&id2=${player2Id}&player2=${player2}`);
+  // Controleer of er twee verschillende spelers zijn geselecteerd
+  if (selectedPlayers === 'two' && player1 === 'select') {
+    alert('Selecteer speler 1.');
+    return;
+  }
+  if (selectedPlayers === 'two' && player2 === 'select') {
+    alert('Selecteer speler 2.');
+    return;
+  }
+  if (selectedPlayers === 'two' && player1 === 'guest' && player2 === 'guest') {
+    navigate(`/board?players=${selectedPlayers}&game=${selectedGame}&legs=${selectedLegs}&player1=${player1}1&player2=${player2}2`);
+    return;
+  }
+  if (selectedPlayers === 'two' && player1 === player2) {
+    alert('Kies twee verschillende spelers om het spel te starten.');
+    return;
+  }
+
+  // Als er slechts één speler is geselecteerd
+  if (selectedPlayers === 'single') {
+    if (player1 === 'guest') {
+      // Als de speler een gast is, doorgeven als gast
+      navigate(`/board?players=${selectedPlayers}&game=${selectedGame}&legs=${selectedLegs}&player1=guest`);
     } else {
-      navigate(`/board?players=${selectedPlayers}&game=${selectedGame}&legs=${selectedLegs}&player1=${user.firstname}`);
+      // Anders de naam van de speler doorgeven
+      navigate(`/board?players=${selectedPlayers}&game=${selectedGame}&legs=${selectedLegs}&player1=${player1}`);
     }
-  };
+  } else {
+    // Als er twee spelers zijn geselecteerd, doorgeven beide namen
+    navigate(`/board?players=${selectedPlayers}&game=${selectedGame}&legs=${selectedLegs}&player1=${player1}&player2=${player2}`);
+  }
+};
+;
 
   console.log('players', player1Id);
 
